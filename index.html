@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600%7CRoboto:300,400,500" media="all">
+    <link rel="shortcut icon" href="src/favicon.ico">
 </head>
 
 <body class="web">
@@ -126,7 +127,7 @@
     
     
     
-            <div tabindex="-1" class="app _3dqpi two" id="app-content">
+            <div tabindex="-1" class="app _3dqpi two" id="app-content" style="display: none">
     
                 <div class="MZIyP">
                     <div class="_3q4NP k1feT">
@@ -822,7 +823,8 @@
                                         </div>
                                     </div>
                                     <div class="_9tCEa" id="messages">
-                                        <div class="message">
+                                        <!-- Essas mensagens vai ser colocadas dinamicamente -->
+                                        <!-- <div class="message">
     
                                             <div class="_3_7SH kNKwo message-in tail">
                                                 <span class="tail-container"></span>
@@ -1109,7 +1111,7 @@
                                                     </span>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                             </div>
@@ -1331,9 +1333,10 @@
         </div>
     </div>
     <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" id="img-emoji-default"/>
-    <script src="src/util/Format.js"></script>
-    <script src="src/controller/WhatsAppController.js"></script>
-    <script src="src/app.js"></script>
+
+    <script src="dist/pdf.worker.bundle.js"></script>
+    <script src="dist/app.bundle.js"></script>
+    
 </body>
 
 </html>
